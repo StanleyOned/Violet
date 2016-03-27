@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Weather View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WeatherViewController" customModule="Violet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brokenclouds" translatesAutoresizingMaskIntoConstraints="NO" id="3Ve-iM-C02">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FeV-3i-JGB">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="55" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="43" translatesAutoresizingMaskIntoConstraints="NO" id="jNe-Bj-2fs">
+                                        <rect key="frame" x="0.0" y="513" width="112" height="87"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="87" id="4YX-pg-9lM"/>
+                                            <constraint firstAttribute="width" constant="112" id="t1I-2E-AiH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="85"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Local Weather" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hc-dn-KVc">
+                                        <rect key="frame" x="0.0" y="22" width="600" height="37"/>
+                                        <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="33"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="67" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPU-ZU-NoP">
+                                        <rect key="frame" x="136" y="513" width="17" height="19"/>
+                                        <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDA-EH-XMu">
+                                        <rect key="frame" x="136" y="577" width="17" height="19"/>
+                                        <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foggy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGX-nP-luF">
+                                        <rect key="frame" x="0.0" y="467" width="148" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="OVU-xg-RCf"/>
+                                            <constraint firstAttribute="width" constant="148" id="g9d-Wm-kPC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="rGX-nP-luF" secondAttribute="bottom" constant="102" id="0X7-7b-pq8"/>
+                                    <constraint firstItem="QPU-ZU-NoP" firstAttribute="leading" secondItem="jNe-Bj-2fs" secondAttribute="trailing" constant="24" id="Hnu-je-bva"/>
+                                    <constraint firstItem="5hc-dn-KVc" firstAttribute="top" secondItem="FeV-3i-JGB" secondAttribute="top" constant="22" id="IKy-GK-trU"/>
+                                    <constraint firstAttribute="bottom" secondItem="jNe-Bj-2fs" secondAttribute="bottom" id="JEW-H3-DLn"/>
+                                    <constraint firstItem="eDA-EH-XMu" firstAttribute="leading" secondItem="jNe-Bj-2fs" secondAttribute="trailing" constant="24" id="Jb5-gx-HhX"/>
+                                    <constraint firstItem="jNe-Bj-2fs" firstAttribute="leading" secondItem="FeV-3i-JGB" secondAttribute="leading" id="Lat-3B-J78"/>
+                                    <constraint firstItem="QPU-ZU-NoP" firstAttribute="top" secondItem="rGX-nP-luF" secondAttribute="bottom" constant="15" id="Qd8-2a-oQo"/>
+                                    <constraint firstItem="rGX-nP-luF" firstAttribute="leading" secondItem="FeV-3i-JGB" secondAttribute="leading" id="UUT-RT-zYt"/>
+                                    <constraint firstAttribute="trailing" secondItem="5hc-dn-KVc" secondAttribute="trailing" id="a6S-mP-r6e"/>
+                                    <constraint firstItem="5hc-dn-KVc" firstAttribute="leading" secondItem="FeV-3i-JGB" secondAttribute="leading" id="enD-el-Aaq"/>
+                                    <constraint firstItem="QPU-ZU-NoP" firstAttribute="top" secondItem="rGX-nP-luF" secondAttribute="bottom" constant="15" id="jfr-7v-jLy"/>
+                                    <constraint firstItem="eDA-EH-XMu" firstAttribute="top" secondItem="QPU-ZU-NoP" secondAttribute="bottom" constant="45" id="kY1-bE-p6Z"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3Ve-iM-C02" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="1G3-nZ-thK"/>
+                            <constraint firstAttribute="trailing" secondItem="FeV-3i-JGB" secondAttribute="trailing" id="2Lu-kZ-bVi"/>
+                            <constraint firstItem="FeV-3i-JGB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="S6d-33-dR0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3Ve-iM-C02" secondAttribute="bottom" id="TCJ-Rp-GcV"/>
+                            <constraint firstItem="3Ve-iM-C02" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YiC-6j-KDe"/>
+                            <constraint firstAttribute="trailing" secondItem="3Ve-iM-C02" secondAttribute="trailing" id="add-7B-izF"/>
+                            <constraint firstItem="FeV-3i-JGB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="sZ9-aj-Uat"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FeV-3i-JGB" secondAttribute="bottom" id="wD3-bp-HUi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="3Ve-iM-C02" id="QOX-Su-cFv"/>
+                        <outlet property="backgroundView" destination="FeV-3i-JGB" id="sKB-pY-5Gq"/>
+                        <outlet property="cityName" destination="5hc-dn-KVc" id="Ze8-Bg-9Hq"/>
+                        <outlet property="desc" destination="rGX-nP-luF" id="WTW-0E-iQj"/>
+                        <outlet property="highest" destination="QPU-ZU-NoP" id="7J9-qZ-hNq"/>
+                        <outlet property="lowest" destination="eDA-EH-XMu" id="gQa-4J-ofC"/>
+                        <outlet property="temp" destination="jNe-Bj-2fs" id="0RU-0p-Apr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="310"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="brokenclouds" width="1300" height="625"/>
+    </resources>
+</document>
